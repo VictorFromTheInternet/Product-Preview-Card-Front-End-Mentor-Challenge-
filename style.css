@@ -1,0 +1,119 @@
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* background */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  justify-items: center;
+}
+
+.background{
+  background-color: hsl(30, 38%, 92%); /* cream */
+  min-height: 100vh; /* viewport unit - height */
+  width: 100vw;      /* viewport unit - width */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* product card */
+.card{
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  max-width: 500px;
+  max-height: 400px;
+}
+.product-image{
+  position: relative;
+  width: 250px;
+  height: 400px;
+}
+.product-text{
+  position: relative;
+  background: white;
+  padding: 20px;
+  max-width: 210px;
+  min-height: 360px;
+}
+
+/* Product text (Desktop & Mobile)*/
+.product-type{
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 500;
+  font-size: .6rem;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%); 
+}
+.product-title{
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.product-description{
+  font-family: 'Montserrat', sans-serif; 
+  font-size: .8rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%); 
+}
+.price-new{
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: hsl(158, 36%, 37%);
+  display: inline-block;
+  padding-bottom: 20px;
+}
+.price-old{
+  padding-left: 30px;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 500;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%); 
+  display: inline-block;
+}
+.cart-button{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  border-radius: 1rem;
+}
+.card a{
+  font-family: 'Montserrat', sans-serif; 
+  font-size: .8rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  background-color: hsl(158, 36%, 37%);
+}
+.card a:hover{
+  background-color: hsl(160, 35%, 20%);;
+}
+
+
+
+
+/* footer*/
+.attribution { 
+  background-color: hsl(30, 38%, 92%); /* cream */
+  position: fixed;
+  padding-left: 10px;
+  bottom: 10px; 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
