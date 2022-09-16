@@ -28,7 +28,7 @@ html, body {
 
 /* product card */
 .card{
-  border-radius: 1rem;
+  border-radius: 2rem;
   background-color: white;
   display: flex;
   max-width: 500px;
@@ -36,8 +36,8 @@ html, body {
 }
 .product-image{
   position: relative;
-  width: 250px;
-  height: 400px;
+  max-width: 250px;
+  max-height: 400px;
 }
 .product-text{
   position: relative;
@@ -45,7 +45,9 @@ html, body {
   padding: 20px;
   max-width: 210px;
   min-height: 360px;
+  max-height: 370px;
 }
+
 
 /* Product text (Desktop & Mobile)*/
 .product-type{
@@ -109,7 +111,6 @@ html, body {
 .attribution { 
   background-color: hsl(30, 38%, 92%); /* cream */
   position: fixed;
-  padding-left: 10px;
   bottom: 10px; 
   font-size: 11px; 
   text-align: center; 
@@ -117,3 +118,15 @@ html, body {
 .attribution a { 
   color: hsl(228, 45%, 44%); 
 }
+
+
+
+/* media query */ 
+@media(max-width: 600px){
+	.product-image{
+		
+
+	}
+}
+
+
