@@ -8,13 +8,15 @@
 }
 .card{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	min-width: 40%;
-  min-height: 20%;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+	min-width: 600px;
+  min-height: 400px;
 
 	border-radius: 2rem;
   background-color: white;
 }
+
+/* card image */
 .product-image{
 	background-size: cover;
 	justify-content: center;
@@ -28,7 +30,68 @@
 #picture{
 	background-image: url('images/image-product-desktop.jpg"');
 }
+
+
+
+/* card text */
 .product-text{
+	display: grid;
 	padding: 1rem;
 	font-family: Outfit, sans-serif;
+}
+
+.product-type{
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 500;
+  font-size: .6rem;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%); 
+}
+.product-title{
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.product-description{
+  font-family: 'Montserrat', sans-serif; 
+  font-size: .8rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%); 
+}
+.price-new{
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: hsl(158, 36%, 37%);
+  padding-bottom: 20px;
+}
+.price-old{
+  padding-left: 30px;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 500;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%); 
+}
+.cart-button{
+	display: grid;
+	align-items: center;
+  justify-content: center;
+	
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  border-radius: 1rem;
+}
+.card a{
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  background-color: hsl(158, 36%, 37%);
+}
+.card a:hover{
+  background-color: hsl(160, 35%, 20%);;
 }
